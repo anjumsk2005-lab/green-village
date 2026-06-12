@@ -1,38 +1,140 @@
-.App {
+/* Common */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Login Page */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+}
+
+.login-box {
+  width: 400px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-box button:hover {
+  background: #1b5e20;
+}
+
+/* Dashboard */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f1f8e9;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Dashboard Cards */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 250px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h2 {
+  color: #2e7d32;
+}
+
+/* Register Tree */
+
+.register-page {
+  min-height: 100vh;
+  background: #e8f5e9;
+  padding: 30px;
+}
+
+/* Tree Tracker */
+
+.tracker-page {
+  min-height: 100vh;
+  background: #e3f2fd;
+  padding: 30px;
+}
+
+/* Green Alert */
+
+.alert-page {
+  min-height: 100vh;
+  background: #fff3e0;
+  padding: 30px;
+}
+
+/* Rewards */
+
+.rewards-page {
+  min-height: 100vh;
+  background: #fff8e1;
+  padding: 30px;
+}
+
+/* Common Buttons */
+
+button {
+  background: #2e7d32;
   color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background: #1b5e20;
 }
